@@ -6,9 +6,11 @@
 def next_greater(nums):
   result=[]
   for i in range(len(nums)):
+  
     for j in range(i+1,len(nums)):
       if nums[j]>nums[i]:
         result.append(nums[j])
+        
         break
     else:
       result.append(-1)
